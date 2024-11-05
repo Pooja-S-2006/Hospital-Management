@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="main.css">  
+    <link rel="stylesheet" href="index.css">
+    <title>eDoc</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Base font for the page */
+            background-image: url('img2.jpg'); /* Set the background image for the whole page */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+        .header {
+            position: fixed; /* Stays at the top while scrolling */
+            top: 0;
+            left: 0;
+            right: 0; /* Ensures it spans the full width */
+            display: flex;
+            justify-content: space-between; /* Pushes items to the edges */
+            align-items: center;
+            padding: 10px 20px; /* Adjust padding as needed */
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent background for readability */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+            z-index: 1000; /* Ensures it stays on top of other elements */
+        }
+        .edoc-logo {
+            font-size: 2em; /* Adjust font size */
+            margin-right: 5px; /* Space between logo and subtitle */
+        }
+        .edoc-logo-sub {
+            font-size: 1.2em; /* Adjust font size */
+        }
+        .nav-item {
+            text-decoration: none; /* Removes underline from link */
+            color: #007BFF; /* Link color */
+            font-size: 1em; /* Font size for visibility */
+            padding: 10px 20px; /* Padding around the text */
+            background-color: #f0f0f0; /* Background color for button effect */
+            border-radius: 5px;
+            margin-right: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth background transition */
+        }
+        .nav-item:hover {
+            background-color: #e0e0e0; /* Darker background on hover */
+        }
+        .main-container {
+            margin-top: 70px; /* Adjust based on the height of your header */
+            height: calc(100vh - 70px); /* Full height minus header height */
+            display: flex; /* Use flexbox for centering */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+            color: black; /* Text color for contrast */
+        }
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+            border-radius: 10px; /* Rounded corners for the box */
+            padding: 40px; /* Increased padding inside the box */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+            text-align: center; /* Center text inside the box */
+            max-width: 800px; /* Maximum width for the box */
+            width: 90%; /* Adjust width to be responsive */
+            height: 400px; /* Set a fixed height for the box */
+            position: relative; /* Positioning for the content */
+        }
+        .text-box-content {
+            position: relative; /* Ensure content is positioned correctly */
+            z-index: 1; /* Bring text in front of the background */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div>
+            <span class="edoc-logo">HMS</span>
+            <span class="edoc-logo-sub">| Hospital Management System</span>
+        </div>
+        <a href="register.html" class="nav-item">REGISTER</a>
+        <a href="services.html" class="nav-item">SERVICES</a>
+    </header>
+
+    <div class="main-container">
+        <div class="text-box">
+            <div class="text-box-content">
+                <p class="heading-text">Ease process, save time.</p>
+                <p class="sub-text2">
+                    Feeling under the weather today? No need to fret. With HMS,<br>
+                    you can easily connect with healthcare professionals and schedule appointments online.
+                </p>
+                <p class="sub-text3">
+                    HMS Hospital is dedicated to providing high-quality healthcare services to the community. With a team of skilled professionals and state-of-the-art facilities, the hospital offers a range of medical specialties and patient care programs. Emphasizing patient-centered care, HMS Hospital prioritizes the well-being and comfort of its patients throughout their treatment journey. Continuous innovation and compassionate service drive the hospital's mission to improve health outcomes and enhance the overall patient experience.
+                </p>
+                <a href="login.html">
+                    <input type="button" value="Make Appointment" class="login-btn btn-primary btn" style="padding: 10px 25px;">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
